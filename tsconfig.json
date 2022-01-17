@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "outDir": "dist",
+        "esModuleInterop": true,
+        "jsx": "react-jsx",
+        // esnext leaves ES6 imports/exports unchanged, this should be handled by webpack
+        "module": "esnext",
+        "moduleResolution": "node",
+        // libs that will exist in the target environment, so typescript can auto import types
+        "lib": [
+            "dom",
+            "es2018"
+        ],
+        "strict": true,
+        "sourceMap": true,
+        "noImplicitAny": true,
+        "removeComments": true,
+        "target": "es2018",
+    },
+    "include": [
+        "./src/**/**/*"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
